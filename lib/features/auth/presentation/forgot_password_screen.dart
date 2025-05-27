@@ -53,6 +53,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                         ),
                         hintTxt: 'example@gmail.com',hinStyleColor: TextFontStyle.headlineA0A5BAw400text14),
                     UIHelper.verticalSpace(60.h),
+
                     CustomFoodButtonWidget(
                       titleStyle: TextFontStyle.headlineFFFFFFw700text14,
                         onTap: (){

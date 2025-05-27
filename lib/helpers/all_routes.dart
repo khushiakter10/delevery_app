@@ -15,17 +15,17 @@ import '../features/card/presentation/traking_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/homedelivery/presentation/burger_screen.dart';
 import '../features/homedelivery/presentation/categorise_screen.dart';
-import '../features/homedelivery/presentation/food_details_screen.dart';
+import '../features/homedelivery/presentation/stack_food_details_screen.dart';
 import '../features/homedelivery/presentation/home_delivery_screen.dart';
-import '../features/homedelivery/presentation/search_screen.dart';
-import '../features/manu/presentation/add_new_adress_screen.dart';
-import '../features/manu/presentation/addresss_screen.dart';
+import '../features/homedelivery/presentation/chip_screen.dart';
+import '../features/manu/presentation/upore_stack_fixt_screen.dart';
+import '../features/manu/presentation/delet_screen.dart';
 import '../features/manu/presentation/edit_profile_screen.dart';
 import '../features/manu/presentation/menu_screen.dart';
-import '../features/manu/presentation/ongoing_screen.dart';
-import '../features/manu/presentation/profile_screen.dart';
-import '../features/report/presentation/productivity_screen.dart';
-import '../features/timer/presentation/finish_screen.dart';
+import '../features/manu/presentation/hard_ongoinng_screen.dart';
+
+import '../features/report_tabbar/presentation/productivity_screen.dart';
+import '../features/timer/presentation/progrss.dart';
 import '../features/timer/presentation/rassion_screen.dart';
 import '../features/timer/presentation/timer_screen.dart';
 import '../features/timer/presentation/work_screen.dart';
@@ -196,11 +196,6 @@ case Routes.menuScreen:
         return Platform.isAndroid
             ? _FadedTransitionRoute(widget: const MenuScreen(), settings: settings)
             : CupertinoPageRoute(builder: (context) => const MenuScreen());
-
-case Routes.profilescreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const ProfileScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const ProfileScreen());
 
 case Routes.editProfileScreen:
         return Platform.isAndroid
