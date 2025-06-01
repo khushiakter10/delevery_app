@@ -1,20 +1,11 @@
 import 'dart:developer';
 import 'package:auto_animated/auto_animated.dart';
-import 'package:delevery_app/features/card/presentation/calling_screen.dart';
-import 'package:delevery_app/features/card/presentation/edit_card_screen.dart';
-import 'package:delevery_app/features/cursole/flick_video_screen.dart';
-import 'package:delevery_app/features/cursole/presentation/carosel_Slider_screen.dart';
-import 'package:delevery_app/features/home/presentation/custom_today_widget.dart';
-import 'package:delevery_app/features/home/presentation/home_screen.dart';
-import 'package:delevery_app/features/homedelivery/presentation/burger_screen.dart';
-import 'package:delevery_app/features/homedelivery/presentation/chip_screen.dart';
-import 'package:delevery_app/features/homedelivery/presentation/stack_food_details_screen.dart';
-import 'package:delevery_app/features/hy_pert_mart/presentation/hyper_mart_home_screen.dart';
-import 'package:delevery_app/features/hy_pert_mart/presentation/previouse_order_screen.dart';
-import 'package:delevery_app/features/timer/presentation/caontainer_ses_image_fixt.dart';
-import 'package:delevery_app/features/timer/presentation/progrss.dart';
-import 'package:delevery_app/features/timer/presentation/rassion_screen.dart';
-import 'package:delevery_app/features/timer/presentation/work_screen.dart';
+
+import 'package:delevery_app/features/manu/presentation/edit_profile_screen.dart';
+import 'package:delevery_app/features/manu/presentation/full_select_unselect_cod.dart';
+import 'package:delevery_app/features/manu/presentation/hard_ongoinng_screen.dart';
+import 'package:delevery_app/features/manu/presentation/upore_stack_fixt_screen.dart';
+import 'package:delevery_app/features/report_tabbar/presentation/productivity_screen.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -24,8 +15,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:provider/provider.dart';
 import '/helpers/all_routes.dart';
 import 'constants/app_constants.dart';
-import 'features/card/presentation/add_to_card_screen.dart';
-import 'features/report_tabbar/presentation/productivity_screen.dart';
+import 'features/homedelivery/presentation/categorise_screen.dart';
 import 'gen/colors.gen.dart';
 import 'helpers/di.dart';
 import 'helpers/helper_methods.dart';
@@ -124,7 +114,7 @@ class UtillScreenMobile extends StatelessWidget {
             navigatorKey: NavigationService.navigatorKey,
             onGenerateRoute: RouteGenerator.generateRoute,
 
-            home:  EditCardScreen(),
+            home:  ProductivityScreen (),
           ),
         );
       },

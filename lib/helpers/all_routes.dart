@@ -19,7 +19,6 @@ import '../features/homedelivery/presentation/stack_food_details_screen.dart';
 import '../features/homedelivery/presentation/home_delivery_screen.dart';
 import '../features/homedelivery/presentation/chip_screen.dart';
 import '../features/manu/presentation/upore_stack_fixt_screen.dart';
-import '../features/manu/presentation/delet_screen.dart';
 import '../features/manu/presentation/edit_profile_screen.dart';
 import '../features/manu/presentation/menu_screen.dart';
 import '../features/manu/presentation/hard_ongoinng_screen.dart';
@@ -203,10 +202,6 @@ case Routes.editProfileScreen:
             : CupertinoPageRoute(builder: (context) => const EditProfileScreen());
 
 
-case Routes.addresssScreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const AddresssScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const AddresssScreen());
 
 case Routes.addNewAdressScreen:
         return Platform.isAndroid
