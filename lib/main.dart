@@ -1,5 +1,6 @@
 import 'dart:developer';
 import 'package:auto_animated/auto_animated.dart';
+import 'package:delevery_app/features/card/presentation/emoji_screen.dart';
 
 import 'package:delevery_app/features/manu/presentation/edit_profile_screen.dart';
 import 'package:delevery_app/features/manu/presentation/full_select_unselect_cod.dart';
@@ -114,7 +115,7 @@ class UtillScreenMobile extends StatelessWidget {
             navigatorKey: NavigationService.navigatorKey,
             onGenerateRoute: RouteGenerator.generateRoute,
 
-            home:  ProductivityScreen (),
+            home:  EmojiScreen (),
           ),
         );
       },

@@ -38,11 +38,14 @@ class OrderTrackingScreen extends StatelessWidget {
               ),
             ),
             UIHelper.verticalSpace(130.h),
+
+
             const CustomTrakingWidget(
               title: 'Uttora Coffee House',
              subtitle: 'Orderd at 06 Sept, 10:00pm',
               subtitle2: '2x Burger',
             )
+
           ],
         ),
       ),
