@@ -22,7 +22,6 @@ import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:intl/intl.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
-import '../common_widget/custom_button.dart';
 import '../gen/colors.gen.dart';
 import '/helpers/di.dart';
 import '/helpers/toast.dart';
