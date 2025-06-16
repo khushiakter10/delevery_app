@@ -1,6 +1,6 @@
 import 'dart:developer';
 import 'package:auto_animated/auto_animated.dart';
-import 'package:delevery_app/features/outline_button_screen.dart';
+import 'package:delevery_app/features/lamba_container.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -101,14 +101,10 @@ class UtillScreenMobile extends StatelessWidget {
             ),
             debugShowCheckedModeBanner: false,
             translations: LocalString(),
-            // locale: Locale(language, countryCode),
-            // builder: (context, widget) {
-            //   return MediaQuery(data: MediaQuery.of(context), child: widget!);
-            // },
             navigatorKey: NavigationService.navigatorKey,
             onGenerateRoute: RouteGenerator.generateRoute,
 
-            home: OutlineScreen (),
+            home:  Screen (),
           ),
         );
       },

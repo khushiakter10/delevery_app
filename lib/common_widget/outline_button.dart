@@ -28,12 +28,12 @@ class OutlineButton extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12.r),
           ),
+        //  overlayColor: Colors.transparent
         ),
+
         onPressed: onPressed,
-        child: Text(
-          text,
-          style: textStyle ?? const TextStyle(color: Colors.black),
-        ),
+        child: Text(text,style: textStyle ?? const TextStyle(color: Colors.black)),
+
       ),
     );
   }

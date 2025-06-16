@@ -34,14 +34,15 @@ class CustomElevatedButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(11.r),
               //side: const BorderSide(color: Colors.grey),
             ),
+            //overlayColor: Colors.transparent
           ),
           onPressed: onPressed,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(text,
-                  style: textStyle ??
-                      TextStyle(color: Colors.white, fontSize: 14.sp)),
+
+              Text(text,style: textStyle ??TextStyle(color: Colors.white, fontSize: 14.sp)),
+
               if (showArrow && arrwicon != null) ...[
                 UIHelper.horizontalSpace(12.w),
                 arrwicon!,
