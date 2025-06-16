@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:auto_animated/auto_animated.dart';
-import 'package:delevery_app/features/lamba_container.dart';
+import 'package:delevery_app/features/card/presentation/calling_screen.dart';
+import 'package:delevery_app/features/elevated_button_screen.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -104,7 +105,7 @@ class UtillScreenMobile extends StatelessWidget {
             navigatorKey: NavigationService.navigatorKey,
             onGenerateRoute: RouteGenerator.generateRoute,
 
-            home:  Screen (),
+            home:   CallingScreen (),
           ),
         );
       },

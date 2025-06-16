@@ -79,7 +79,7 @@ class TextButtonWidget extends StatelessWidget {
         style: TextButton.styleFrom(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12.r),
-            side:  BorderSide(color: Colors.transparent),
+            side:  const BorderSide(color: Colors.transparent),
           ),
           backgroundColor: color ?? Colors.red,
 
@@ -87,7 +87,7 @@ class TextButtonWidget extends StatelessWidget {
           overlayColor:  Colors.transparent
         ),
         onPressed: onPressed,
-        child: Text(text, style: textStyle ??  TextStyle(color: Colors.black)),
+        child: Text(text, style: textStyle ??  const TextStyle(color: Colors.black)),
 
 
 

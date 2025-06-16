@@ -232,11 +232,11 @@ case Routes.orderTrackingScreen:
         return Platform.isAndroid
             ? _FadedTransitionRoute(widget: const OrderTrackingScreen(), settings: settings)
             : CupertinoPageRoute(builder: (context) => const OrderTrackingScreen());
-
-case Routes.callingScreen:
-        return Platform.isAndroid
-            ? _FadedTransitionRoute(widget: const CallingScreen(), settings: settings)
-            : CupertinoPageRoute(builder: (context) => const CallingScreen());
+//
+// case Routes.callingScreen:
+//         return Platform.isAndroid
+//             ? _FadedTransitionRoute(widget: const CallingScreen(), settings: settings)
+//             : CupertinoPageRoute(builder: (context) => const CallingScreen());
 
 case Routes.masterCardScreen:
         return Platform.isAndroid

@@ -12,13 +12,14 @@ class ButtonScreen extends StatefulWidget {
 class _ButtonScreenState extends State<ButtonScreen> {
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
+    return   Scaffold(
       body: Padding(
         padding: EdgeInsets.all(8.0),
         child: Column(
           children: [
             Spacer(),
-            CustomButton(text: 'Ahona',color: Colors.blue),
+
+            CustomButton(text: 'Ahona',color: Colors.blue, onPressed: () {},),
             Spacer(),
           ],
         ),

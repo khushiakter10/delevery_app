@@ -3,22 +3,23 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButton extends StatelessWidget {
   final String text;
-  final VoidCallback? voidCallback;
+  final VoidCallback onPressed;
   final double? height;
   final Color? color;
   final TextStyle? textStyle;
   const CustomButton({
     super.key,
     required this.text,
-    this.voidCallback,
     this.height,
-    this.color, this.textStyle,
+    this.color,
+    this.textStyle, required this.onPressed,
+
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: voidCallback,
+      onTap: onPressed,
       child: Container(
         height: height ?? 50.h,
         width: double.infinity,
@@ -27,9 +28,8 @@ class CustomButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(8.r),
         ),
         child: Center(
-            child: Text(text,
-
-
+            child: Text(
+          text,
         )),
       ),
     );
