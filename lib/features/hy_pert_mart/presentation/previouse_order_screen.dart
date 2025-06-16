@@ -75,6 +75,7 @@ class _PreviouseOrderScreenState extends State<PreviouseOrderScreen> {
               orderText: 'Order Again',
               orderTextStyle: TextFontStyle.arabic26cFFFFFFFFStyleNotoNaskh.copyWith(fontSize: 13.sp),
             ),
+
             UIHelper.verticalSpace(10.h),
             SizedBox(
               height: 500.h,

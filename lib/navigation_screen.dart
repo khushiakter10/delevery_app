@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'features/home/presentation/home_screen.dart';
-import 'features/report_tabbar/presentation/productivity_screen.dart';
+import 'features/timer/presentation/productivity_screen.dart';
 import 'features/timer/presentation/timer_screen.dart';
 import 'gen/assets.gen.dart';
 import 'gen/colors.gen.dart';

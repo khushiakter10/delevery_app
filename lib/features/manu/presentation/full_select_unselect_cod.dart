@@ -1,8 +1,9 @@
+import 'package:delevery_app/constants/text_font_style.dart';
+import 'package:delevery_app/gen/colors.gen.dart';
+import 'package:delevery_app/helpers/ui_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../constants/text_font_style.dart';
-import '../../../gen/colors.gen.dart';
-import '../../../helpers/ui_helpers.dart';
+
 
 class SelectScreen extends StatefulWidget {
   const SelectScreen({super.key});
@@ -21,15 +22,15 @@ class _SelectScreenState extends State<SelectScreen> {
       if (selectedIndex == 1) {
         _isSelected1 = true;
         _isSelected2 = false;
-        _isSelected3 = false; // Deselect all others
+        _isSelected3 = false;
       } else if (selectedIndex == 2) {
         _isSelected1 = false;
         _isSelected2 = true;
-        _isSelected3 = false; // Deselect all others
+        _isSelected3 = false;
       } else if (selectedIndex == 3) {
         _isSelected1 = false;
         _isSelected2 = false;
-        _isSelected3 = true; // Deselect all others
+        _isSelected3 = true;
       }
     });
   }
@@ -87,11 +88,7 @@ class _SelectScreenState extends State<SelectScreen> {
                       color: _isSelected3 ? AppColors.cF58D1D : AppColors.cF0F5FA,
                       borderRadius: BorderRadius.circular(22.r),
                     ),
-                    child: Text(
-                      "Other",
-                      style: TextFontStyle.headlineFFFFFFw400.copyWith(
-                        color: _isSelected3 ? AppColors.cFFFFFF : AppColors.c000000,
-                      ),
+                    child: Text("Other",style: TextFontStyle.headlineFFFFFFw400.copyWith(color: _isSelected3 ? AppColors.cFFFFFF : AppColors.c000000),
                     ),
                   ),
                 ),

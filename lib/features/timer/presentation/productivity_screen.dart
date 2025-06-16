@@ -6,8 +6,8 @@ import 'package:delevery_app/gen/colors.gen.dart';
 import 'package:delevery_app/helpers/ui_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'widget/custom_container_productivity_widget.dart';
-import 'widget/customline_chart_widget.dart';
+import '../widget/custom_container_productivity_widget.dart';
+import 'customline_chart_widget.dart';
 
 class ProductivityScreen extends StatefulWidget {
   const ProductivityScreen({super.key});

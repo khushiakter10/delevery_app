@@ -1,12 +1,6 @@
 import 'dart:developer';
 import 'package:auto_animated/auto_animated.dart';
-import 'package:delevery_app/features/card/presentation/emoji_screen.dart';
-
-import 'package:delevery_app/features/manu/presentation/edit_profile_screen.dart';
-import 'package:delevery_app/features/manu/presentation/full_select_unselect_cod.dart';
-import 'package:delevery_app/features/manu/presentation/hard_ongoinng_screen.dart';
-import 'package:delevery_app/features/manu/presentation/upore_stack_fixt_screen.dart';
-import 'package:delevery_app/features/report_tabbar/presentation/productivity_screen.dart';
+import 'package:delevery_app/features/elevated_button.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -16,7 +10,6 @@ import 'package:get_storage/get_storage.dart';
 import 'package:provider/provider.dart';
 import '/helpers/all_routes.dart';
 import 'constants/app_constants.dart';
-import 'features/homedelivery/presentation/categorise_screen.dart';
 import 'gen/colors.gen.dart';
 import 'helpers/di.dart';
 import 'helpers/helper_methods.dart';
@@ -115,7 +108,7 @@ class UtillScreenMobile extends StatelessWidget {
             navigatorKey: NavigationService.navigatorKey,
             onGenerateRoute: RouteGenerator.generateRoute,
 
-            home:  EmojiScreen (),
+            home:    Screen (),
           ),
         );
       },

@@ -90,14 +90,14 @@ class EmojiScreen extends StatefulWidget {
 class _EmojiScreenState extends State<EmojiScreen> {
   final TextEditingController textEditingController = TextEditingController();
   bool _emojiShowing = false;
-  final List<String> messages = []; // মেসেজ লিস্ট
+  final List<String> messages = [];
 
   void sendMessage() {
     final message = textEditingController.text.trim();
     if (message.isNotEmpty) {
       setState(() {
-        messages.add(message); // মেসেজ লিস্টে যোগ করো
-        textEditingController.clear(); // টেক্সট ফিল্ড ক্লিয়ার
+        messages.add(message);
+        textEditingController.clear();
       });
     }
   }
@@ -136,7 +136,7 @@ class _EmojiScreenState extends State<EmojiScreen> {
               IconButton(
                 icon: const Icon(Icons.emoji_emotions_outlined),
                 onPressed: () {
-                  FocusScope.of(context).unfocus(); // কীবোর্ড হাইড
+                  FocusScope.of(context).unfocus();
                   setState(() {
                     _emojiShowing = !_emojiShowing;
                   });

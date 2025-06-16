@@ -1,7 +1,8 @@
+import 'package:delevery_app/common_widget/myCustomTextFormfild.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../common_widget/myCustomTextFormfild.dart';
+
 
 class Practice extends StatefulWidget {
   const Practice({super.key});
@@ -16,7 +17,7 @@ class _PracticeState extends State<Practice> {
     return  Scaffold(
       body: Padding(
         padding:  EdgeInsets.symmetric(vertical: 50.h,horizontal: 20.w),
-        child: Column(
+        child: const Column(
           children: [
             MyCustomTextFormWidget(),
           ],

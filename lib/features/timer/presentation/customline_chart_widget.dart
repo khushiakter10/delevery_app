@@ -1,8 +1,10 @@
+import 'package:delevery_app/constants/text_font_style.dart';
+import 'package:delevery_app/gen/colors.gen.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../constants/text_font_style.dart';
-import '../../../../gen/colors.gen.dart';
+
+
 
 class CustomLineChartWidget extends StatelessWidget {
   const CustomLineChartWidget({super.key});
@@ -10,7 +12,7 @@ class CustomLineChartWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 90.h, horizontal: 12.w), // Padding adjusted
+      padding: EdgeInsets.symmetric(vertical: 90.h, horizontal: 12.w),
       child: Container(
         decoration: BoxDecoration(
           color: Colors.white,
@@ -43,7 +45,7 @@ class CustomLineChartWidget extends StatelessWidget {
                   sideTitles: SideTitles(
                     showTitles: true,
                     getTitlesWidget: bottomTitleWidgets,
-                    reservedSize: 24.sp,
+                    reservedSize: 40.sp,
                   ),
                 ),
                 topTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)),
@@ -52,14 +54,14 @@ class CustomLineChartWidget extends StatelessWidget {
               borderData: FlBorderData(show: false),
               lineBarsData: [
                 LineChartBarData(
-                  spots: const [
-                    FlSpot(0, 0.5),
-                    FlSpot(1, 1.5),
-                    FlSpot(2, 1.0),
-                    FlSpot(3, 2.5),
-                    FlSpot(4, 1.8),
-                    FlSpot(5, 2.2),
-                    FlSpot(6, 1.5),
+                  spots:  [
+                    const FlSpot(0, 0.5),
+                    const FlSpot(1,1.5),
+                    const FlSpot(2, 1.2),
+                    const FlSpot(3, 2.5),
+                    const FlSpot(4, 1.8),
+                    const FlSpot(5, 2.2),
+                    const FlSpot(6, 1.5),
                   ],
                   isCurved: true,
                   color: AppColors.cA366E0,

@@ -24,7 +24,6 @@ class OngoingScreenTwo extends StatelessWidget {
                     NavigationService.navigateTo(Routes.menuScreen);
                   },
                   child: ListView.builder(
-                    controller: ScrollController(),
                     padding: EdgeInsets.zero,
                     shrinkWrap: true,
                     itemCount: 10,
