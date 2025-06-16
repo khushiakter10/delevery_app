@@ -1,24 +1,32 @@
 import 'package:delevery_app/common_widget/elevated_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
-class Screen extends StatefulWidget {
-  const Screen({super.key});
+class ElevatedScreen extends StatefulWidget {
+  const ElevatedScreen({super.key});
 
   @override
-  State<Screen> createState() => _ScreenState();
+  State<ElevatedScreen> createState() => _ElevatedScreenState();
 }
 
-class _ScreenState extends State<Screen> {
+class _ElevatedScreenState extends State<ElevatedScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child:
+      body: const Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Column(
+          children: [
 
-        CustomElevatedButton(text: 'khisi', onPressed: () {}),
-
+          ],
+        ),
       ),
+     bottomNavigationBar:Padding(
+       padding:  EdgeInsets.symmetric(horizontal: 15.w,vertical: 15.h),
+
+       child: CustomElevatedButton(text: 'Ahona', onPressed: () {},textStyle: const TextStyle(color: Colors.black))
+     ),
     );
   }
 }
