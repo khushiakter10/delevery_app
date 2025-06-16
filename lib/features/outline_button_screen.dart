@@ -17,7 +17,7 @@ class _OutlineScreenState extends State<OutlineScreen> {
         child: Center(
           child:
 
-          OutlineButton(text: 'Ahona',color: Colors.blue, voidCallback: () {}),
+          OutlineButton(text: 'Ahona', onPressed: () {},),
 
         ),
       ),
