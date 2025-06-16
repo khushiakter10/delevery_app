@@ -1,7 +1,6 @@
+import 'package:delevery_app/common_widget/elevated_button.dart';
 import 'package:flutter/material.dart';
 
-
-import '../common_widget/elevated_button.dart';
 
 class Screen extends StatefulWidget {
   const Screen({super.key});
@@ -16,6 +15,7 @@ class _ScreenState extends State<Screen> {
     return Scaffold(
       body: Center(
         child:
+
         CustomElevatedButton(text: 'khisi', onPressed: () {}),
 
       ),

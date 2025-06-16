@@ -347,35 +347,35 @@ void showMaterialDialog(
               textAlign: TextAlign.center,
               style: TextFontStyle.headline14StyleMontserrat,
             ),
-            actions: <Widget>[
-              customeButton(
-                  name: "No".tr,
-                  onCallBack: () {
-                    Navigator.of(context).pop(false);
-                  },
-                  height: 30.sp,
-                  minWidth: .3.sw,
-                  borderRadius: 30.r,
-                  color: AppColors.c000000,
-                  textStyle: GoogleFonts.montserrat(
-                      fontSize: 17.sp, color: AppColors.primaryColor, fontWeight: FontWeight.w700),
-                  context: context),
-              customeButton(
-                  name: "Yes".tr,
-                  onCallBack: () {
-                    if (Platform.isAndroid) {
-                      SystemNavigator.pop();
-                    } else if (Platform.isIOS) {
-                      exit(0);
-                    }
-                  },
-                  height: 30.sp,
-                  minWidth: .3.sw,
-                  borderRadius: 30.r,
-                  color: AppColors.primaryColor,
-                  textStyle: GoogleFonts.montserrat(fontSize: 17.sp, color: Colors.white, fontWeight: FontWeight.w700),
-                  context: context),
-            ],
+            // actions: <Widget>[
+            //   customeButton(
+            //       name: "No".tr,
+            //       onCallBack: () {
+            //         Navigator.of(context).pop(false);
+            //       },
+            //       height: 30.sp,
+            //       minWidth: .3.sw,
+            //       borderRadius: 30.r,
+            //       color: AppColors.c000000,
+            //       textStyle: GoogleFonts.montserrat(
+            //           fontSize: 17.sp, color: AppColors.primaryColor, fontWeight: FontWeight.w700),
+            //       context: context),
+            //   customeButton(
+            //       name: "Yes".tr,
+            //       onCallBack: () {
+            //         if (Platform.isAndroid) {
+            //           SystemNavigator.pop();
+            //         } else if (Platform.isIOS) {
+            //           exit(0);
+            //         }
+            //       },
+            //       height: 30.sp,
+            //       minWidth: .3.sw,
+            //       borderRadius: 30.r,
+            //       color: AppColors.primaryColor,
+            //       textStyle: GoogleFonts.montserrat(fontSize: 17.sp, color: Colors.white, fontWeight: FontWeight.w700),
+            //       context: context),
+            // ],
           ));
 }
 
