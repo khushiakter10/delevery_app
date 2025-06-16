@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:auto_animated/auto_animated.dart';
 import 'package:delevery_app/features/elevated_button.dart';
+import 'package:delevery_app/features/outline_button.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -108,7 +109,7 @@ class UtillScreenMobile extends StatelessWidget {
             navigatorKey: NavigationService.navigatorKey,
             onGenerateRoute: RouteGenerator.generateRoute,
 
-            home: ElevatedScreen (),
+            home: OutlineScreen (),
           ),
         );
       },
