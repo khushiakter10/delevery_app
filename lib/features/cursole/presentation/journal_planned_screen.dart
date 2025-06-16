@@ -83,7 +83,7 @@ class _JournalplannedscreenState extends State<Journalplannedscreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('khusi', style: TextFontStyle.headline32343Ew800text22),
+                            Text('khushi', style: TextFontStyle.headline32343Ew800text22),
                             UIHelper.verticalSpace(4.h),
                             Text('Apple', style: TextFontStyle.headline676767w400text14),
                             UIHelper.verticalSpace(4.h),
